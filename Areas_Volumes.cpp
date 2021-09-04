@@ -1,23 +1,30 @@
-// Trying to make a program in which we give area of different shapes.
+// Trying to make a program in which we give area and volumes of different shapes.
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int a, b, x, y, z;
+    int a, b, w, x, y, z;
     cout<<"PROGRAM TO CALCULATE AREAS AND VOLUMES OF ALL SHAPES *_*"<<endl;
     cout<<"1. Area"<<endl<<"2. Volume"<<endl;
     cout<<"What you like to Calculate? ";
-    cin>>x;
+    cin>>w;
     
 
     //********************AREAS OF SHAPES**********************************
 
 
+    if (w==1)
+    {
+        cout<<"1. 2D Shapes"<<endl<<"2. 3D Shapes"<<endl;
+        cout<<"Choose Any Type:";
+        cin>>x;
+    }
+
     if (x==1)
     {
-        cout<<"Here is the list of all Shapes:"<<endl;
+        cout<<"Here is the list of all 2D Shapes:"<<endl;
         cout<<"1. Square"<<endl<<"2. Rectangle"<<endl<<"3. Triangle"<<endl<<"4. Circle"<<endl<<"5. Parallelogram"<<endl<<"6. Trapezium"<<endl;
 
         float a;
@@ -85,11 +92,18 @@ int main()
         }
     }
 
+    else if (x==2)
+    {
+        cout<<"Here is the list of all 2D Shapes:"<<endl;
+        cout<<"1. Cube"<<endl<<"2. Cuboid"<<endl<<"3. Sphere"<<endl;
+    }
+    
+
 
 // **********************************VOLUMES OF SHAPES*************************************
 
 
-    else if (x==2)
+    else if (w==2)
     {
         cout<<"Here is the List of all shapes:"<<endl;
         cout<<"1. Cube"<<endl<<"2. Cuboid"<<endl<<"3. Sphere"<<endl<<"4. Cylinder"<<endl<<"5. Right Circular Cone"<<endl<<"6. Prism"<<endl;
