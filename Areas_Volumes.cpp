@@ -5,7 +5,8 @@ using namespace std;
 
 int main()
 {
-    int a, b, w, x, y, z;
+    int w, x, y, z;
+    float a, s, l, b, r, h;
     cout<<"PROGRAM TO CALCULATE AREAS AND VOLUMES OF ALL SHAPES *_*"<<endl;
     cout<<"1. Area"<<endl<<"2. Volume"<<endl;
     cout<<"What you like to Calculate? ";
@@ -28,9 +29,6 @@ int main()
         cout<<"1. Square"<<endl<<"2. Rectangle"<<endl<<"3. Triangle"<<endl<<"4. Circle"<<endl<<"5. Parallelogram"<<endl<<"6. Trapezium"<<endl;
         cout<<"SELECT NUMBER, Area of which shape you want: ";
         cin>>a;
-
-        float a;
-        float s, l, b, r, h;
 
         if (a==1)  //SQUARE
         {
@@ -61,7 +59,7 @@ int main()
         {
             cout<<"Enter the value of radius: ";
             cin>>r;
-            cout<<"The Area of Circle is: "<<3.14 * r*r<<endl;
+            cout<<"The Area of Circle is: "<<3.14 * r*r<<"      (Taking RADIUS = 3.14)"<<endl;
         }
 
         else if (a==5)   //PARALLELOGRAM
@@ -123,14 +121,14 @@ int main()
         {
             cout<<"Enter the value of radius: ";
             cin>>r;
-            cout<<"The Area of Circle is: "<<3.14 *r*r*4<<endl;
+            cout<<"The Area of Circle is: "<<3.14 *r*r*4<<"      (Taking RADIUS = 3.14)"<<endl;
         }
 
         else if (a==4)   //HEMISPHERE
         {
             cout<<"Enter the value of radius: ";
             cin>>r;
-            cout<<"The Area of Circle is: "<<3.14 * r*r*3<<endl;
+            cout<<"The Area of Circle is: "<<3.14 * r*r*3<<"      (Taking RADIUS = 3.14)"<<endl;
         }
 
         else if (a==5)   //CYLINDER
@@ -139,7 +137,7 @@ int main()
             cin>>r;
             cout<<"Enter the value of height: ";
             cin>>h;
-            cout<<"The Area of Cylinder is: "<<(r+h)*3.14 * r*2<<endl;
+            cout<<"The Area of Cylinder is: "<<(r+h)*3.14 * r*2<<"      (Taking RADIUS = 3.14)"<<endl;
         }
 
         else if (a==6)   //Cone
@@ -148,8 +146,13 @@ int main()
             cin>>r;
             cout<<"Enter the value of slant height: ";
             cin>>h;
-            cout<<"The Volume of Cone is: "<<(r+h)*3.14 *r*h<<endl;
-        }        
+            cout<<"The Volume of Cone is: "<<(r+h)*3.14 *r*h<<"      (Taking RADIUS = 3.14)"<<endl;
+        }
+
+        else
+        {
+            cout<<"Invalid Number Inputed"<<endl;
+        }      
     }
     
 
@@ -192,7 +195,7 @@ int main()
             cin>>r;
             cout<<"Enter the value of height: ";
             cin>>h;
-            cout<<"The Volume of Sphere is: "<<(4/3) * 3.14 * r*r*r<<endl;
+            cout<<"The Volume of Sphere is: "<<(4/3) * 3.14 * r*r*r<<"      (Taking RADIUS = 3.14)"<<endl;
         }
 
         else if (a==4)   //CYLINDER
@@ -201,7 +204,7 @@ int main()
             cin>>r;
             cout<<"Enter the value of height: ";
             cin>>h;
-            cout<<"The Volume of Cylinder is: "<<3.14 * r*r * h<<endl;
+            cout<<"The Volume of Cylinder is: "<<3.14 * r*r * h<<"      (Taking RADIUS = 3.14)"<<endl;
         }
 
         else if (a==5)   //Cone
@@ -210,7 +213,7 @@ int main()
             cin>>r;
             cout<<"Enter the value of height: ";
             cin>>h;
-            cout<<"The Volume of Cone is: "<<(0.33) * 3.14 * r*r * h<<endl;
+            cout<<"The Volume of Cone is: "<<(0.33) * 3.14 * r*r * h<<"      (Taking RADIUS = 3.14)"<<endl;
         }
 
         else if (a==6)   //PRISM
